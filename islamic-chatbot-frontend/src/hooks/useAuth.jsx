@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from 'react'
 
 const AuthContext = createContext()
 
-const API_BASE_URL = 'http://localhost:5000/api/v1'
+const API_BASE_URL = 'https://islamic-mu.vercel.app/'
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
