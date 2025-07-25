@@ -22,8 +22,8 @@ from src.routes.chat_enhanced import chat_enhanced_bp
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
 
 # Configuration
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'islamic-chatbot-secret-key-2024')
-app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'jwt-secret-key-islamic-chatbot')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'my-flask-key-32digit-only-for-me')
+app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'my-jwt-key-3eo2digit-only-for-me)
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=30)
 
