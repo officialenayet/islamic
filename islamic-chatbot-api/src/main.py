@@ -32,11 +32,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(os.path.dirnam
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # OpenAI configuration
-app.config['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
-app.config['OPENAI_API_BASE'] = os.getenv('OPENAI_API_BASE')
+app.config['OPENAI_API_KEY'] = os.getenv('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')
+app.config['OPENAI_API_BASE'] = os.getenv('https://api.openai.com/v1/')
 
 # Initialize extensions
-CORS(app, origins="*", allow_headers=["Content-Type", "Authorization"])
+CORS(app, origins="https://islamic-chatbot-blush.vercel.app", allow_headers=["Content-Type", "Authorization"])
 jwt = JWTManager(app)
 db.init_app(app)
 
